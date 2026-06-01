@@ -1,0 +1,18 @@
+{
+  "package": "com.xyflowinnovations.packsmith",
+  "latestVersion": "0.1.0",
+  "minimumSupportedVersion": "0.1.0",
+  "releaseDate": "2026-05-31",
+  "downloadUrl": "https://xyflowinnovations.com/packsmith",
+  "changelogUrl": "https://github.com/Xyloth/packsmith/releases/tag/v0.1.0",
+  "severity": "none",
+  "summary": "Initial PackSmith release.",
+  "changes": [
+    "Read-only asset-pack intake scan",
+    "Buyer verdict and review queue",
+    "Publisher QA preflight",
+    "Safe Fix Plan, rollback transaction, and Fix Proof reports",
+    "Scan and publisher QA exports",
+    "In-app bug and suggestion reporting"
+  ]
+}

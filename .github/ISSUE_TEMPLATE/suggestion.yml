@@ -1,0 +1,41 @@
+name: Suggestion
+description: Suggest a PackSmith rule, workflow, fix, or UX improvement.
+title: "[Suggestion]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: user-problem
+    attributes:
+      label: What asset-pack pain should this solve?
+      description: Describe the real workflow or asset-pack problem.
+    validations:
+      required: true
+  - type: textarea
+    id: desired-behavior
+    attributes:
+      label: Desired behavior
+      description: What should PackSmith detect, explain, fix, export, or simplify?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Scanner rule
+        - Safe fix
+        - Workflow Impact
+        - Fit Check
+        - Pipeline Preview
+        - Reports
+        - UI/UX
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example assets or reports
+      description: Add public/owned examples, screenshots, or exported report snippets if available.

@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a PackSmith problem with reproducible context.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include the exported Markdown or JSON report when possible. Do not attach paid third-party asset packs unless you have redistribution rights.
+  - type: input
+    id: packsmith-version
+    attributes:
+      label: PackSmith version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity version
+      placeholder: "6000.2.12f1"
+    validations:
+      required: true
+  - type: dropdown
+    id: render-pipeline
+    attributes:
+      label: Render pipeline
+      options:
+        - Built-in
+        - URP
+        - HDRP
+        - Custom SRP
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Import package...
+        2. Open PackSmith...
+        3. Scan folder...
+    validations:
+      required: true
+  - type: textarea
+    id: finding-context
+    attributes:
+      label: Rule or finding context
+      description: Paste rule ID, asset path, evidence text, or exported report excerpt.
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or report links
+      description: Add screenshots or links to exported reports if safe to share.
